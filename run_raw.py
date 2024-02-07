@@ -5,7 +5,6 @@ from flask import Flask, jsonify, request
 app = Flask(__name__)
 
 
-@app.route('/create_tag', methods=["POST"])
 def create_tag():
     body = request.json
     product_code = body.get('product_code')
